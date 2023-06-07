@@ -3,7 +3,6 @@
   import FeedbackList from "./components/FeedbackList.svelte";
   import FeedbackStats from "./components/FeedbackStats.svelte";
 
-  let type = "text";
   let disabled = true;
 
   let feedback = [
@@ -41,7 +40,7 @@
 </script>
 
 <main class="container">
-  <FeedbackForm on:addFeedback={addFeedback} {type} {disabled} />
+  <FeedbackForm on:addFeedback={addFeedback} {disabled} />
   <FeedbackStats {average} {count} />
   <FeedbackList {feedback} on:delete-feedback={deleteFeedback} />
 </main>

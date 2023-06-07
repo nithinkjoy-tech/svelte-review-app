@@ -17,9 +17,8 @@
   value={rating}
   {id}
 />
-<label class="{value==rating ?"selected" : ''}" on:click={handleChange}>{value}</label>
-
-<!-- <h1>{selected}</h1> -->
+<label class={value == rating ? "selected" : ""} on:click={handleChange}>{value}</label
+>
 
 <style>
   input {
